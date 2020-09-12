@@ -2,13 +2,13 @@ package ru.sombrero1.Main;
 
 import java.util.Arrays;
 import java.util.Random;
-
+//Первая практическая - все задачи в виде функций
 public class Main {
 
     public static void main(String[] args) {
 	// write your code here
 
-        System.out.println(example3());
+        example3();
         System.out.println(example4(args));
         example5();
         example6();
@@ -19,7 +19,7 @@ public class Main {
 
     }
 
-    public static String example3(){
+    public static void example3(){
         int []mass=new int[10];
         int answer=0;
 
@@ -27,11 +27,31 @@ public class Main {
         for(int i=0; i<10; i++)
             mass[i]=rand.nextInt(100);
 
-        for(int i=0; i<10; i++)
+        for(int i=0; i<mass.length; i++)
             answer+=mass[i];
 
-        String s=String.format("Answer_3: %d",answer);
-        return s;
+        System.out.println(String.format("Answer_3: %d",answer));
+
+        answer=0;
+        int j=0;
+        while(j<mass.length) {
+            answer += mass[j];
+            j++;
+        }
+        System.out.println(String.format("Answer_3: %d",answer));
+
+        answer=0;
+        j=0;
+        do{
+            answer+=mass[j];
+            j++;
+
+        }
+        while(j<mass.length);
+        System.out.println(String.format("Answer_3: %d",answer));
+
+
+
     }
 
     public static String example4(String []args){
@@ -122,7 +142,6 @@ public class Main {
 
 
         String s=String.format("Answer_7: %d",answer);
-        Math.random();
         return s;
     }
 
