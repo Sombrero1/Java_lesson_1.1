@@ -30,7 +30,7 @@ public class Main {
         for(int i=0; i<mass.length; i++)
             answer+=mass[i];
 
-        System.out.println(String.format("Answer_3: %d",answer));
+        System.out.println(String.format("Answer_3.1: %d",answer));
 
         answer=0;
         int j=0;
@@ -38,7 +38,7 @@ public class Main {
             answer += mass[j];
             j++;
         }
-        System.out.println(String.format("Answer_3: %d",answer));
+        System.out.println(String.format("Answer_3.2: %d",answer));
 
         answer=0;
         j=0;
@@ -48,7 +48,7 @@ public class Main {
 
         }
         while(j<mass.length);
-        System.out.println(String.format("Answer_3: %d",answer));
+        System.out.println(String.format("Answer_3.3: %d",answer));
 
 
 
